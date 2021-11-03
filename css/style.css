@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: #D0E8B6;
+  display: flex;
+  flex-direction: column;
+}
+
+body nav {
+  border: 2px solid red;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+body nav p {
+  margin: 1rem;
+}
+
+body nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+body nav ul li {
+  margin: 1rem;
+  list-style: none;
+}
+
+body .hero::before {
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: url(../images/main.jpg) no-repeat center center/cover;
+  position: absolute;
+  margin: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+body .hero {
+  height: 100vh;
+  width: 100vw;
+}
+
+body .hero .title {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body .article {
+  margin: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body .article .title {
+  margin: 2rem 0rem;
+  text-align: center;
+}
+
+body .article .all-articles {
+  margin: .5rem;
+  border: 2px solid red;
+  height: auto;
+  width: 18rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+body .article .all-articles img {
+  height: 9rem;
+  width: 17.8rem;
+}
+
+body .article .all-articles p {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #fff;
+}
+
+body .feature {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body .feature img {
+  height: 15rem;
+  width: 19.8rem;
+}
+
+body .feature .about {
+  background-color: #fff;
+  text-align: center;
+}
+
+body .feature .about h1 {
+  padding: 1rem 0rem;
+}
+
+body .feature .about p {
+  text-align: justify;
+  padding: 0rem .5rem 2rem;
+}
+
+body .contact {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body .contact .headline {
+  margin: .5rem;
+}
+
+body .contact .email {
+  margin: 1rem;
+  padding: .2rem .8rem;
+}
+
+body .contact .btn {
+  padding: .1rem .6rem;
+}
+
+footer {
+  background-color: #fff;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul li {
+  margin: .2rem;
+  list-style: none;
+  cursor: pointer;
+  color: #000;
+}
+
+footer ul li a {
+  color: #000;
+}
