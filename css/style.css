@@ -5,7 +5,7 @@
 }
 
 html {
-  font-size: 100%;
+  font-size: 62.5%;
 }
 
 body {
@@ -21,7 +21,6 @@ body {
 }
 
 body nav {
-  border: 2px solid red;
   background-color: #fff;
   display: flex;
   flex-direction: row;
@@ -66,22 +65,23 @@ body .hero .title {
   align-items: center;
 }
 
-body .article {
-  margin: 1px solid black;
+body section .title {
+  height: 2rem;
+  margin: auto;
+  margin: 2rem 0rem;
+  text-align: center;
+}
+
+body section .article {
+  padding: 2rem 0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-body .article .title {
-  margin: 2rem 0rem;
-  text-align: center;
-}
-
-body .article .all-articles {
+body section .article .all-articles {
   margin: .5rem;
-  border: 2px solid red;
   height: auto;
   width: 18rem;
   border-radius: .5rem;
@@ -89,12 +89,12 @@ body .article .all-articles {
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
 }
 
-body .article .all-articles img {
-  height: 9rem;
-  width: 17.8rem;
+body section .article .all-articles img {
+  height: 9.7rem;
+  width: 18rem;
 }
 
-body .article .all-articles p {
+body section .article .all-articles p {
   text-align: center;
   padding: 3rem 1rem;
   background-color: #fff;
@@ -170,4 +170,66 @@ footer ul li {
 
 footer ul li a {
   color: #000;
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 70%;
+  }
+  body section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body section .article {
+    flex-direction: row;
+  }
+  body section .article .title {
+    height: 2rem;
+    width: 5rem;
+    margin: auto;
+  }
+  body .feature {
+    flex-direction: row;
+    margin: 2rem;
+  }
+  body .feature img {
+    height: 20rem;
+    width: 40%;
+  }
+  body .feature .about {
+    height: 20rem;
+    width: 40%;
+  }
+}
+
+@media (max-width: 1500px) {
+  html {
+    font-size: 100%;
+  }
+  body section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body section .article {
+    flex-direction: row;
+  }
+  body section .article .title {
+    height: 2rem;
+    width: 5rem;
+    margin: auto;
+  }
+  body .feature {
+    flex-direction: row;
+    margin: 2rem;
+  }
+  body .feature img {
+    height: 20rem;
+    width: 40%;
+  }
+  body .feature .about {
+    height: 20rem;
+    width: 40%;
+  }
 }
